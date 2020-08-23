@@ -20,3 +20,11 @@ for(let hobby of hobbies)
     console.log(hobby);
 }
 console.log(hobbies.map(hobby => 'Hobby  : '+hobby));
+const toArrayTypeOne = (arg1,arg2,arg3) => {
+    return [arg1,arg2,arg3];
+};
+console.log(toArrayTypeOne(1,2,3));
+const toArrayTypeTwo = (...args) => {
+    return args;
+};
+console.log(toArrayTypeTwo(1,2,3));
